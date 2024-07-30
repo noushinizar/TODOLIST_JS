@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h4 {
+    
+    color: #7c7777;
+}
+
+.input-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px gray;
+   
+}
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#new-task {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+#add-task {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color:  rgb(222, 63, 5);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: #0b1622;
+}
+
+#task-list, #completed-task-list {
+    list-style: none;
+    padding: 0;
+  
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.task button:hover {
+    color: #0056b3;
+}
+
+.theme-switcher {
+    text-align: right;
+    margin-bottom: 10px;
+}
+#theme{
+ 
+    outline: none;
+    border: none;
+}
+body.dark #theme{
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .container {
+    background: #444;
+    color: #fff;
+}
+
+body.dark .input-container {
+   
+    background: #a7a1a1;
+    color: #0f0e0e;
+}
+
+body.dark #add-task {
+    background-color: #0b1622;
+}
+
+body.dark #add-task:hover {
+    background-color:rgb(222, 63, 5) ;
+}
+/* body.dark h4,h1{
+    color: #ddd;
+} */
