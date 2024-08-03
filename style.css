@@ -5,18 +5,16 @@ body {
 }
 
 .container {
-    width: 450px;
-    background: #fff;
-    margin:auto;
-    margin-top: 200px;
+    width: 500px;
+    background: #444;
+    margin:50px auto;
     padding: 20px;
     box-shadow: 10px 10px 20px black;
     border-radius: 8px;
 }
 
 h1, h4 {
-    
-    color: #7c7777;
+    color: white;
 }
 
 .input-container {
@@ -25,6 +23,7 @@ h1, h4 {
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
+    color: white;
     border-radius: 30px;
     margin-bottom: 20px;
     box-shadow: 2px 2px 3px gray;
@@ -83,27 +82,31 @@ input{
     border: none;
     background: none;
     cursor: pointer;
-    color: #007bff;
+    /* color: #007bff; */
 }
 
-.task button:hover {
-    color: #0056b3;
-}
+
 
 .theme-switcher {
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 #theme{
- 
+    background-color:transparent;
+    color: #fff;
     outline: none;
     border: none;
 }
 body.dark #theme{
-    background-color: #333;
-    color: #fff;
+    color: black;
     outline: none;
     border: none;
+}
+option{
+    background-color: black;
+}
+body.dark option{
+    background-color:#fff ;
 }
 body.dark {
     background-color: #333;
@@ -111,14 +114,18 @@ body.dark {
 }
 
 body.dark .container {
-    background: #444;
-    color: #fff;
+    background: #fff;
+    color: #444;
 }
-
+body.dark h1{
+    color: #0b1622;
+}
+body.dark h4{
+    color: #0b1622;
+}
 body.dark .input-container {
-   
-    background: #a7a1a1;
-    color: #0f0e0e;
+    background: #cfc2c2;
+    color: white;
 }
 
 body.dark #add-task {

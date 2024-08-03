@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const task = document.createElement('li');
         task.className = 'task';
-        task.style.backgroundColor = getRandomColor
+        task.style.backgroundColor = getRandomColor()
 
         const taskContent = document.createElement('span');
         taskContent.textContent = taskText;
